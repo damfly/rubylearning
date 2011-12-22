@@ -32,6 +32,3 @@ end
 ages_in_seconds.each do |seconds|
   puts "#{seconds} seconds => #{seconds_to_years(seconds)}"
 end
-
-yy = Time.at(2158493738)
-puts yy
