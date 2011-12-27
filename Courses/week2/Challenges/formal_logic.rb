@@ -13,7 +13,7 @@
 
 #puts 5 > 3 ? "yeah" : "boo" #=> nil
 #yeah
-#puts 5 < 3 ? "yeah" : "boo" #=> nil
+#puts 5 @lt; 3 ? "yeah" : "boo" #=> nil
 #boo
  
 #Now imagine that operator wouldn't exist, how could you easily replace it by using logic operators and exploiting short-circuiting and precedence?
@@ -22,14 +22,18 @@
 state1 = 5 > 3 
 state2 = 5 < 3
 
-#puts 5 > 3 ? "yeah" : "boo" 
-(state1 && (state1 = ("yeah")))
-puts state1 # => yeah
+#Version of puts 5 > 3 ? "yeah" : "boo" 
+puts (state1 && (state1 = ("yeah"))) #=>yeah
+
+#Autre version qui marche
+puts 5 > 3 && "yeah" || !(5 > 3) && "boo"
 
 
-#puts 5 < 3 ? "yeah" : "boo"
-(state2 || (state2 = ("boo")))
-puts state2 # => boo
+#Version of puts 5 < 3 ? "yeah" : "boo"
+puts (state2 || (state2 = ("boo"))) #=> boo
+#Autre version qui marche
+puts 5 < 3 && "yeah" || !(5 < 3) && "boo"
+
 
 
 
