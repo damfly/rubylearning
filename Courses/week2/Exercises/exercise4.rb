@@ -13,36 +13,28 @@
 
 # Note: a century year, like 1900 and 2000, is a leap year only if it is divisible by 400.
 
+#Definition of the method checking if a year is a leap year or not
 def leap_year?(year)
-  if year % 400 == 0 || (year % 100 != 0 && year % 4 == 0)
-    true
-  else 
-    false
+  year % 400 == 0 || year % 4 == 0 && year % 100 != 0
+end
+
+def is_or_not (state) 
+  state and 'is' or 'is not'
+end
+
+#Get the value from the user
+#Check if the argument is an integer. If not, a message is displayed and the program exits
+def get_and_check_int
+  STDOUT.flush
+  number = gets.chomp
+  begin 
+    number = Integer(number)
+  rescue ArgumentError
+    puts "Please, enter a year using an Integer :)"
+    get_and_check_int
   end
 end
 
-STDOUT.flush
-year = gets.chomp
-
-
-#Check if the argument is an integer. If not, a message is displayed and the program exits
-begin
-    year = Integer(year)
-rescue ArgumentError
-    puts "Please, enter a year using an integer :)"
-    exit
-end
-
-# Solution to the 1/ problem of the assignement :
-puts leap_year?(year) ? "#{year} is a leap year" : "#{year} is not a leap year"
-
-
-# Solution to the 2/ problem of the assignement :
-MINUTES_IN_HOUR = 60
-HOURS_IN_DAY = 24
-DAYS_IN_LEAP_YEAR = 366
-DAYS_IN_NON_LEAP_YEAR = 365
-
-puts leap_year?(year) ? "There is #{DAYS_IN_LEAP_YEAR * HOURS_IN_DAY * MINUTES_IN_HOUR} minutes in the leap year #{year}" :
-                        "There is #{DAYS_IN_NON_LEAP_YEAR * HOURS_IN_DAY * MINUTES_IN_HOUR} minutes in the  year #{year}"
-
+year = get_and_check_int
+minutes_in_day = 24 * 60
+puts "#{year} #{is_or_not leap_year?(year)} a leap year. It lasts #{minutes_in_day * (leap_year?(year) ? 366 : 365)} minutes"

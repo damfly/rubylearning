@@ -19,20 +19,20 @@
 #Now imagine that operator wouldn't exist, how could you easily replace it by using logic operators and exploiting short-circuiting and precedence?
 
 
-state1 = 5 > 3 
-state2 = 5 < 3
+state = 5 < 3 
 
 #Version of puts 5 > 3 ? "yeah" : "boo" 
-puts (state1 && (state1 = ("yeah"))) #=>yeah
-
-#Autre version qui marche
-puts 5 > 3 && "yeah" || !(5 > 3) && "boo"
-
+puts 5 > 3 && ("yeah") || ("boo")  #=>yeah
 
 #Version of puts 5 < 3 ? "yeah" : "boo"
-puts (state2 || (state2 = ("boo"))) #=> boo
+#puts !state || ("boo") #=> boo
+
+
 #Autre version qui marche
-puts 5 < 3 && "yeah" || !(5 < 3) && "boo"
+#puts 5 > 3 && "yeah" || !(5 > 3) && "boo"
+
+#Autre version qui marche
+#puts 5 < 3 && "yeah" || !(5 < 3) && "boo"
 
 
 
