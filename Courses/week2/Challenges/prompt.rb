@@ -5,7 +5,8 @@
   * Date: 28/12/2012
 =end
 
-def prompt (user_input = gets.chomp)
+def prompt (text)
   STDOUT.flush
-  user_input
+  puts text
+  user_input = gets.chomp
 end

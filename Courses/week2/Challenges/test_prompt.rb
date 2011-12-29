@@ -8,7 +8,10 @@ require_relative 'prompt'
   * Date: 28/12/2012
 =end
 
-#puts prompt("coucou")
+#prompt("coucou")
 
-year = prompt
-puts year.slice(0)
+#year = prompt
+#puts year.slice(0)
+
+sonny_answers = prompt("What's your name, Sonny?")
+puts "Gramps asked what his name was, and Sonny said '#{sonny_answers}'."

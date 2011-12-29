@@ -23,7 +23,7 @@ def mtdarry
   end
 end
 
-puts [0,1,2,3,4,5,6,7,8,9].each.inspect
+puts [0,1,2,3,4,5,6,7,8,9]
 
 puts mtdarry
 puts mtdarry.next #=> 0 à 10
