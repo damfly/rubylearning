@@ -7,13 +7,13 @@
 
 
 
-def mtdarry
-  10.times do |num|
-    puts num
-  end
-end
+#def mtdarry
+#  10.times do |num|
+#    puts num
+#  end
+#end
  
-mtdarry #=> O à 9lo
+#mtdarry #=> O à 9
 
 puts
 
@@ -23,12 +23,10 @@ def mtdarry
   end
 end
 
-puts [0,1,2,3,4,5,6,7,8,9]
+puts mtdarry.class
+#puts mtdarry.next #=> 0 à 10
 
-puts mtdarry
-puts mtdarry.next #=> 0 à 10
-
-#a = [ 1, 2, 3 ].each
-#puts a
-#puts a.next
+a = [ 1, 2, 3 ].each
+puts a
+puts a.next
 

@@ -4,115 +4,7 @@
   * Author: Damien HOULLE
   * Date: 27/12/2012
 =end
-
-lines = "Lorem ipsum dolor sit amet, sapien quisque lacus.
-In amet placerat, wisi duis nibh, ornare mauris.
-Ipsum risus.
-Elit laoreet natoque, quam nulla, scelerisque ullamcorper quam.
-At libero amet.
-Molestie nam suspendisse, parturient luctus est.
-A sem nec, arcu ultrices vivamus, ut consequat elementum.
-Pede auctor, wisi et metus, quam arcu eget.
-Vitae vel.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at.
-Metus morbi, id vitae quia, nunc purus at."
+require_relative 'lines_to_be_aligned'
 
 def line_alignement(lines)
 
@@ -128,5 +20,11 @@ def line_alignement(lines)
   #return the lines with proper alignement and index number
   lines_aligned
 end
+
+lines = ""
+1000.times do |x|
+  lines << "#{(x+1).to_s}\n"
+end
+
 
 puts line_alignement(lines)
