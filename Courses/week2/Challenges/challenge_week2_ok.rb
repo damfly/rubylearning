@@ -115,28 +115,18 @@ Metus morbi, id vitae quia, nunc purus at.
 Metus morbi, id vitae quia, nunc purus at."
 
 def line_alignement(lines)
-  # Split the content of the text to be aligned targeting the end of each line
-  #lines_collection = lines.each_line
-  #lines_collection =  lines.split(/$/)
-  
-  # Remove line breaks if any within each line
-  #lines_collection.each {|line| line.gsub!(/\n/, '')} if lines_collection.any? { |line| line[(/\n/)] }
-  
+
   # intialization of the variable lines_aligned that will be used to return the lines aligned
   lines_aligned = ""
-  
-  # let's aligne the lines. For each line within the collection, take the sentence and the index. To align properly we need to format the
+
+  # let's align the lines. For each line within the collection, take the sentence and the index. To align properly we need to format the
   # space between the word Line and the index of the line
-  lines.each_line.with_index(1) {|sentence, index| puts "Line %#{lines.each_line.count.to_s.length}d: %s\n" % [index, sentence.strip]
-}
-  
-  #lines_collection.each.with_index(1) do |sentence, index|
-  #  lines_aligned << "Line %#{lines_collection.length.to_s.length}d: %s\n" % [index, sentence]
-  #end
-  
+  lines.each_line.with_index(1) do |sentence, index|
+    lines_aligned <<  "Line %#{lines.each_line.count.to_s.length}d: %s" % [index, sentence]
+  end
+
   #return the lines with proper alignement and index number
-  #return lines_aligned
+  lines_aligned
 end
 
-#puts 
-line_alignement(lines)
+puts line_alignement(lines)

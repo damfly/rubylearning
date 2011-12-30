@@ -13,28 +13,30 @@
 
 # Note: a century year, like 1900 and 2000, is a leap year only if it is divisible by 400.
 
+
+require_relative 'prompt'
+
 #Definition of the method checking if a year is a leap year or not
 def leap_year?(year)
-  year % 400 == 0 || year % 4 == 0 && year % 100 != 0
+  year.to_i % 400 == 0 || year.to_i % 4 == 0 && year.to_i % 100 != 0
 end
 
 def is_or_not (state) 
-  state and 'is' or 'is not'
+  state && 'is' || 'is not'
+end
+
+def is_a_positive_integer?(text)
+  text.match(/^[+]?[0-9]/) == nil ? false : true 
 end
 
 #Get the value from the user
-#Check if the argument is an integer. If not, a message is displayed and the program exits
-def get_and_check_int
-  STDOUT.flush
-  number = gets.chomp
-  begin 
-    number = Integer(number)
-  rescue ArgumentError
-    puts "Please, enter a year using an Integer :)"
-    get_and_check_int
-  end
+year = prompt("Please enter a year to determine if it is a leap year or not")
+
+#Check if the argument is a positive integer. If not, the program asks for the year as a positive integer
+while !is_a_positive_integer year
+    year = prompt("Please, enter the year as a positive integer") 
 end
 
-year = get_and_check_int
+#Calculation and display of the result
 minutes_in_day = 24 * 60
-puts "#{year} #{is_or_not leap_year?(year)} a leap year. It lasts #{minutes_in_day * (leap_year?(year) ? 366 : 365)} minutes"
+puts "You entered #{year}. It #{is_or_not leap_year?(year)} a leap year. It lasts #{minutes_in_day * (leap_year?(year) ? 366 : 365)} minutes"

@@ -22,7 +22,7 @@
 state = 5 < 3 
 
 #Version of puts 5 > 3 ? "yeah" : "boo" 
-puts 5 > 3 && ("yeah") || ("boo")  #=>yeah
+puts 5 > 3 && 'yeah' || 'boo'  #=>yeah
 
 #Version of puts 5 < 3 ? "yeah" : "boo"
 #puts !state || ("boo") #=> boo
