@@ -33,7 +33,7 @@ end
 year = prompt("Please enter a year to determine if it is a leap year or not")
 
 #Check if the argument is a positive integer. If not, the program asks for the year as a positive integer
-while !is_a_positive_integer year
+while !is_a_positive_integer? year
     year = prompt("Please, enter the year as a positive integer") 
 end
 

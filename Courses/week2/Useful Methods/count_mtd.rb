@@ -12,6 +12,6 @@ a = "Hello World"
 
 puts a.count "o"
 puts a.count "l"
-puts a.count "lo"
-puts a.count "lo", "o"
+puts a.count "lo","o"
+puts a.count "ld"
 
