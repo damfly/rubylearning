@@ -11,13 +11,13 @@ object-oriented structure, any documentation, or a testing methodology.
 
 Your text analyzer will provide the following basic statistics:
 
-Character count
-Character count (excluding spaces)
-Line count
-Word count
-Sentence count
-Paragraph count
-Average number of words per sentence
+-Character count
+-Character count (excluding spaces)
+-Line count
+-Word count
+-Sentence count
+-Paragraph count
+-Average number of words per sentence
 Average number of sentences per paragraph
 In the last two cases, the statistics are easily calculated from the word count, sentence count, and paragraph count. 
 That is, once you have the total number of words and the total number of sentences, it becomes a matter of a simple division 
@@ -43,3 +43,44 @@ Perform calculations to work out the averages.
 Create a new, blank Ruby source file and save it as analyzer.rb in your Ruby folder.
 =end
 
+filename = File.expand_path('~/text.txt')
+
+File.open(filename, 'r') do |f|
+  
+  #line count
+
+  lines = f.readlines
+  line_count = lines.size
+  puts "line count: #{line_count}"
+        
+    
+  #character count
+  content = lines.join
+  character_count = content.length
+  puts "character count: #{character_count}"
+  
+  #character count without spaces
+  character_count_no_space = content.gsub(/s+/, '').length
+  puts "character count without spaces: #{character_count_no_space}"
+
+  #word count
+  word_count = content.split.length
+  puts "word count: #{word_count}"
+
+  #sentence count
+  sentence_count = content.split(/\.|\?|\!/).length
+  puts "sentence count: #{sentence_count}"
+
+  #paragraph count
+  paragraph_count = content.split(/\n\n/).length
+  puts "paragraph count: #{paragraph_count}"
+
+  #Average number of words per sentence
+  ave_word_sent = word_count/sentence_count
+  puts "average number of words per sentence: #{ave_word_sent}"
+
+  #Average sentences per paragraph
+  ave_sent_par = sentence_count/paragraph_count
+  puts "average number of sentences per parapraph: #{ave_sent_par}"
+
+end

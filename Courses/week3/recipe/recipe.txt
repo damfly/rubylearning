@@ -1,0 +1,28 @@
+Solutions to common problems, copy-and-paste code snippets, explanations, examples, and short tutorials. 
+These are meant to keep your brain active with new ideas and save you time. Time, as they say, is money, but a span 
+of time is also a piece of your life. Our lives are better spent creating new things than fighting our own errors,
+ or trying to solve problems that have already been solved. Adapted from Ruby Cookbook by Lucas Carlson and Leonard Richardson.
+
+1. Seeing When a File Was Last Used
+
+Problem
+You want to see when a file was last accessed or modified.
+
+Solution
+The result of File.stat contains a treasure trove of metadata about a file. Perhaps the most useful of its methods are the two time methods mtime (the last time anyone wrote to the file), and atime (the last time anyone read from the file).
+open("output", "w") { |f| f << "Here's some output.\n" }
+stat = File.stat("output")
+puts stat.mtime # => Mon Jan 28 10:59:21 +0530 2008
+puts stat.atime # => Mon Jan 28 10:59:21 +0530 2008
+sleep(2)
+open("output", "a") { |f| f << "Here's some more output.\n" }
+stat = File.stat("output")
+puts stat.mtime # => Mon Jan 28 10:59:23 +0530 2008
+puts stat.atime # => Mon Jan 28 10:59:23 +0530 2008
+sleep(2)
+open("output") { |f| contents = f.read }
+stat = File.stat("output")
+puts stat.mtime # => Mon Jan 28 10:59:23 +0530 2008
+puts stat.atime # => Mon Jan 28 10:59:23 +0530 2008
+Discussion
+A file's atime changes whenever data is read from the file, and its mtime changes whenever data is written to the file.
