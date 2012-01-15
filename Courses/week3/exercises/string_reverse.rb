@@ -1,0 +1,9 @@
+require_relative 'prompt'
+
+#Exercise9. Given a string, write a program to reverse the word order (rather than character order). 
+#The String and Array classes provide methods which will be very helpful for solving this exercise.
+
+
+sentence = prompt("Please, enter the sentence to reverse")
+reversed_sentence = sentence.split.reverse.join(' ')
+puts "the reverse of '#{sentence}' is '#{reversed_sentence}'
